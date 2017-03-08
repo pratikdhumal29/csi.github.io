@@ -1,0 +1,354 @@
+@keyframes righthandmoving{
+				0% {
+					transform:rotate(5deg);
+				}
+				20% {
+					transform:rotate(5.5deg);
+				}
+				40% {
+					transform:rotate(7deg);
+				}
+				60% {
+					transform:rotate(6deg);
+				}
+				100% {
+					transform:rotate(5deg);
+				}
+				
+			}
+
+			@keyframes lefthandmoving{
+				0% {
+					transform:rotate(0deg);
+				}
+				20% {
+					transform:rotate(2deg);
+				}
+				40% {
+					transform:rotate(3deg);
+				}
+				60% {
+					transform:rotate(2deg);
+				}
+				100% {
+					transform:rotate(0deg);
+				}
+				
+			}
+
+			@keyframes shoemoving{
+				0% {
+					transform:rotate(0deg);
+				}
+				20% {
+					transform:rotate(-2deg);
+				}
+				40% {
+					transform:rotate(-3deg);
+				}
+				60% {
+					transform:rotate(-2deg);
+				}
+				100% {
+					transform:rotate(0deg);
+				}
+			}
+			@keyframes laptopshake{
+				0% {
+					transform:rotate(0deg);
+				}
+				20% {
+					transform:rotate(-2deg);
+				}
+				40% {
+					transform:rotate(-3deg);
+				}
+				60% {
+					transform:rotate(-2deg);
+				}
+				100% {
+					transform:rotate(0deg);
+				}
+			}
+			@keyframes facetilt{
+				0% {
+					transform: rotate(0deg);
+				}
+				25% {
+					transform: rotate(-2.5deg);
+				}
+				50% {
+					transform: rotate(0deg);
+				}
+				
+				75% {
+					transform: rotate(2.5deg);
+				}
+				100% {
+					transform: rotate(0deg);
+				}
+			}
+			@keyframes eyeanim{
+				0% {
+					transform: rotate(0deg);
+				}
+				25% {
+					transform: rotate(-1deg);
+				}
+				50% {
+					transform: rotate(0deg);
+				}
+				
+				75% {
+					transform: rotate(1deg);
+				}
+				100% {
+					transform: rotate(0deg);
+				}	
+			}
+
+			@keyframes textanim{
+					
+			}
+
+			@keyframes blink{
+				0% {
+					opacity=.1;
+				}
+				25% {
+					opacity=.25;
+				}
+				50% {
+					opacity=.50;
+				}
+				75% {
+					opacity=.75;
+				}
+				100% {
+					opacity=1;
+				}
+			}
+
+			html,body{
+				width:100%;
+				height:100%;
+			}
+			.main{
+				position:relative;
+				width:180px;
+			}
+			.face {
+				position:absolute;
+				display:block;
+				width:100px;
+				height:100px;
+				background-image:url("images/face.png");
+				background-size:contain;
+				background-repeat: no-repeat;
+				margin-left:50px;
+				z-index:10;
+				animation:facetilt 2s linear 0s infinite alternate-reverse;
+			}
+			.eye{
+				position:absolute;
+				display:block;
+				width:40px;
+				height:40px;
+				background-image:url("images/eye.png");
+				background-size:contain;
+				background-repeat: no-repeat;
+				margin-top:50px;
+				margin-left:67.5px;
+				z-index:10;
+				animation:eyeanim 2s linear 0s infinite alternate-reverse;
+			}
+			.shirt {
+				position:absolute;
+				display:block;
+				width:180px;
+				height:120px;
+				background-image:url("images/shirt.png");
+				background-size:contain;
+				background-repeat: no-repeat;
+				margin-top:75px;
+				z-index:1;
+			}
+			.leftarm {
+				position:absolute;
+				display:block;
+				width:80px;
+				height:40px;
+				background-image:url("images/leftarm.png");
+				background-size:contain;
+				background-repeat: no-repeat;
+				margin-top:149px;
+				margin-left:-0px;
+				z-index:10;
+				animation:lefthandmoving .5s linear 0s infinite alternate-reverse;	
+			}
+			.rightarm {
+				position:absolute;
+				display:block;
+				width:80px;
+				height:60px;
+				background-image:url("images/rightarm.png");
+				background-size:contain;
+				background-repeat: no-repeat;
+				margin-top:140px;
+				margin-left:98px;
+				transform:rotate(5deg);
+				z-index:11;	
+				animation:righthandmoving .5s linear 0s infinite alternate-reverse;
+			}
+			.laptop{
+				position:absolute;
+				display:block;
+				width:140px;
+				height:80px;
+				background-image:url("images/laptop.png");
+				background-size:contain;
+				background-repeat: no-repeat;
+				margin-top:115px;
+				margin-left:19px;
+				animation:laptopshake 1s linear 0s infinite alternate-reverse;
+				z-index:20;
+			}
+			.leg{
+				position:absolute;
+				display:block;
+				width:180px;
+				height:120px;
+				background-image:url("images/leg.png");
+				background-size:contain;
+				background-repeat: no-repeat;
+				margin-top:185px;
+				z-index:1;
+
+			}
+			.leftshoe{
+				position:absolute;
+				display:block;
+				width:75px;
+				height:50px;
+				background-image:url("images/leftshoe.png");
+				background-size:contain;
+				background-repeat: no-repeat;
+				margin-top:290px;
+				margin-left:15px;
+				z-index:0;
+				transform:rotate(15deg);
+			}
+			.rightshoe{
+				position:absolute;
+				display:block;
+				width:75px;
+				height:50px;
+				background-image:url("images/rightshoe.png");
+				background-size:contain;
+				background-repeat: no-repeat;
+				margin-top:285px;
+				margin-left:90px;
+				animation:shoemoving .5s linear 0s infinite alternate-reverse;
+				z-index:0;
+
+				
+			}
+			.chair{
+				position:absolute;
+				display:block;
+				width:270px;
+				height:160px;
+				background-image:url("images/chair.png");
+				background-size:contain;
+				background-repeat: no-repeat;
+				margin-top:185px;
+				margin-left:25px;
+				z-index:0;
+			}
+
+			.divmain{
+				position:relative;
+				width:100%;
+				height:100%;
+
+				
+			}
+			.div1{
+				position:absolute;
+				display:inline;
+				font-weight:bold;
+				font-size:36px;
+				color:#B8860B;
+				transform:rotate(-55deg);
+				position:absolute;
+				margin-top:5%;
+				margin-left:15%;
+			}
+			.div2{
+				position:absolute;
+				display:inline;
+				font-weight:bold;
+				font-size:36px;
+				color:#749F53;
+				transform:rotate(-12deg);
+				position:absolute;
+				margin-top:35%;
+				margin-left:10%;
+			}
+			.div3{
+				position:absolute;
+				display:inline;
+				font-weight:bold;
+				font-size:36px;
+				color:#F08080;
+				transform:rotate(-45deg);
+				position:absolute;
+				margin-top:35%;
+				margin-left:70%;
+			}
+			.div4{
+				position:absolute;
+				display:inline;
+				font-weight:bold;
+				font-size:36px;
+				color:#48D1CC;
+				transform:rotate(-25deg);
+				position:absolute;
+				margin-top:5%;
+				margin-left:70%;
+			}
+			.div5{
+				position:absolute;
+				display:inline;
+				font-weight:bold;
+				font-size:36px;
+				color:#10B44C;
+				transform:rotate(-25deg);
+				position:absolute;
+				margin-top:20%;
+				margin-left:10%;	
+			}
+			.div6{
+				position:absolute;
+				display:inline;
+				font-weight:bold;
+				font-size:36px;
+				color:#A95582;
+				transform:rotate(-25deg);
+				position:absolute;
+				margin-top:20%;
+				margin-left:65%;	
+			}
+			.link{
+				height: 150px;
+  				left: 50%;
+  				margin: -75px 0 0 -53px;
+  				position: absolute;
+  				top: 550px;
+  				width: 106px;
+  				font-weight:bold;
+  				font-size:35px;
+  				color:#629632;
+  				text-align:center;
+  				animation:blink .5s linear 0s infinite alternate-reverse;
+			}

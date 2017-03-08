@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eleganter - New Amazing HTML5 Template</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+   
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>     
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Pretty Simple Content Slider with jQuery and CSS3" />
+        <meta name="keywords" content="jquery,css3, content slider, slide, auto-play"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-family:Arial;
+                background:#C1C7D5 url(title.png) no-repeat top center;
+            }
+            a.back{
+                background:transparent url(back.png) no-repeat top left;
+                position:fixed;
+                width:150px;
+                height:27px;
+                outline:none;
+                bottom:0px;
+                left:0px;
+            }
+            #content{
+				//position:relative;
+                //margin:150px auto 10px 5px;
+				float:right;
+				//margin:0;
+				padding:0;
+				//margin-left:20px;
+            }
+			#content:hover{
+				box-shadow: 10px 10px 15px #CCC;
+			}
+            .reference{
+                clear:both;
+                width:800px;
+                margin:30px auto;
+            }
+            .reference p a{
+                text-transform:uppercase;
+                text-shadow:1px 1px 1px #fff;
+                color:#666;
+                text-decoration:none;
+                font-size:10px;
+            }
+            .reference p a:hover{
+                color:#333;
+            }
+			/*button.getstarted{
+				border:none;
+				color:#FFF;
+				border:#CCC;
+				background:#000;
+				border-style:ridge;
+				height:50px;
+				width:250px;
+				}*/
+			
+			div.padding-2x:hover{
+				//background:url(images/homeicon.jpg)  no-repeat top center;
+				//position:absolute;
+				//top:0;
+				z-index:20;}
+			
+			#homediv:hover {
+				box-shadow:0px 0px 100px #CCC;}
+			.rotator:hover{
+				box-shadow:0px 0px 60px #CCC;}
+			
+        </style>
+     
+  </head>
+  
+  <body class="size-1140" onLoad="sliderhide()">
+    <!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="index.html" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="img/logo.png" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="img/logo-dark.png" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          <p class="nav-text"></p>
+          <ul class="right chevron">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a>Events</a>
+              <ul>
+                <li><a>Blitzkreig '16</a>
+                  <ul>
+                    <li><a href="bk16e.html">Contest</a></li>
+                    <li><a href="bk16g.html">Gallery</a></li>
+                  </ul>
+                </li>
+                <li><a>Nu-Tech '16</a>
+                  <ul>
+                    <li><a href="nt16e.html">Contest</a></li>
+                    <li><a href="nt16g.html">Gallery</a></li>
+                  </ul>
+                  </li>
+              </ul>
+            </li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="magazine.html" target="_blank">Magazine</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">    
+      <!-- Main Header -->
+      <header>
+        <div class="carousel-default owl-carousel carousel-main carousel-nav-white background-dark text-center">
+          <div class="item">
+            <div class="s-12" style="float:left">
+              <img src="images/imgicon.jpg" alt="" style="float:left;">
+              <!--<div style="float:left;position:absolute;top:350px;left:500px">
+              <button class="getstarted" onClick="showslider()">Get Started</button>
+              </div>-->
+              <!--<div class="carousel-content">
+                <div class="content-center-vertical line">
+                  <!--<div class="margin-top-bottom-80">-->
+                      <!--<div class="line">-->
+                     <!-- <div class="s-12 m-12 l-3 center">-->
+                        
+                           <!-- <div id="content" style="float:left;max-width:100%">-->
+                <!--<a class="back" href=""></a>-->
+    
+                <div class="rotator" style="max-width:100%;position:absolute;margin-top:10%;margin-left:10%;width:80%;height:60%;">
+                    <ul id="rotmenu" style="margin:0px">
+                        <li>
+                            <a href="rot1">The Focus</a>
+                            <div style="display:none;">
+                                <div class="info_image">csipic1.jpg</div>
+                                <div class="info_heading">Our Works</div>
+                                <div class="info_description">
+                     At vero eos et accusamus et iusto odio
+                    dignissimos ducimus qui blanditiis praesentium
+                    voluptatum deleniti atque corrupti quos dolores et
+                    quas molestias excepturi sint occaecati cupiditate
+                    non provident... 
+                                    <a href="#" class="more">Read more</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="rot2">Services</a>
+                            <div style="display:none;">
+                                <div class="info_image">csipic2.jpg</div>
+                                <div class="info_heading">We serve</div>
+                                <div class="info_description">
+                     At vero eos et accusamus et iusto odio
+                    dignissimos ducimus qui blanditiis praesentium
+                    voluptatum deleniti atque corrupti quos dolores et
+                    quas molestias excepturi sint occaecati cupiditate
+                    non provident...
+                                    <a href="#" class="more">Read more</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="rot3">Nexus</a>
+                            <div style="display:none;">
+                                <div class="info_image">csipic3.jpg</div>
+                                <div class="info_heading">Get in touch</div>
+                                <div class="info_description">
+                     At vero eos et accusamus et iusto odio
+                    dignissimos ducimus qui blanditiis praesentium
+                    voluptatum deleniti atque corrupti quos dolores et
+                    quas molestias excepturi sint occaecati cupiditate
+                    non provident...
+                                    <a href="#" class="more">Read more</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="rot4">Experiments</a>
+                            <div style="display:none;">
+                                <div class="info_image">csipic4.jpg</div>
+                                <div class="info_heading">We do crazy stuff</div>
+                                <div class="info_description">
+                     At vero eos et accusamus et iusto odio
+                    dignissimos ducimus qui blanditiis praesentium
+                    voluptatum deleniti atque corrupti quos dolores et
+                    quas molestias excepturi sint occaecati cupiditate
+                    non provident...
+                                    <a href="#" class="more">Read more</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="rot5">Our Bond</a>
+                            <div style="display:none;">
+                                <div class="info_image">csipic6.jpg</div>
+                                <div class="info_heading">Working things</div>
+                                <div class="info_description">
+                                    At vero eos et accusamus et iusto odio
+                    dignissimos ducimus qui blanditiis praesentium 
+                    voluptatum deleniti atque corrupti quos dolores et 
+                    quas molestias excepturi sint occaecati cupiditate 
+                    non provident... 
+                                    <a href="#" class="more">Read more</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="rot1" style="margin:0px;padding:0 ">
+                        <img src="" width="20%" height="100%" class="bg" alt=""/>
+                        <!--<div class="heading">
+                            <h1></h1>
+                        </div>
+                        <div class="description">
+                            <p></p>
+    
+                        </div>    -->
+                    </div>
+               <!-- </div>-->
+            </div>
+
+                      <!--</div>       
+                    </div> --> 
+                 <!-- </div>-->
+                <!--</div>
+              </div>-->
+            </div>
+          </div>              
+        </div>               
+      </header>
+      
+      <!-- Section 1 -->
+      <section class="section-small-padding text-center" style="background:url(images/bg3.jpg) repeat"> 
+        <div class="line">
+          <div class="margin">
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div id="homediv" class="padding-2x block-bordered background-white">
+              	<!--<img src="images/homeicon.jpg" class="homeimg" height="10px" width="10px" />
+              	--><a href="#" onMouseOver="homeic(this)"><img src="images/homeicon1.png" style="height:90px; width:90px; margin:0px auto; padding:0;"></a>
+                <h2 class="text-thin">Technicality</h2>
+                <p class="margin-bottom-30">CSI made its way into the ultimate tech clubs of ITNU and is built with the technical ascept at its core.</p>
+                <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div id="homediv" class="padding-2x block-bordered background-white">
+                <a href="#" onMouseOver="homeic1(this)"><img src="images/lapicon.png" style="height:90px; width:90px; margin:0px auto; padding:0;"></a>
+                <h2 class="text-thin">Professional' Club</h2>
+                <p class="margin-bottom-30">Looking towards the past, CSI boasts to be the home of several industry professionals and entrepreneurs.</p>
+                <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div id="homediv" class="padding-2x block-bordered background-white">
+                <a href="#" onMouseOver="homeic2(this)"><img src="images/memicon.png" style="height:90px; width:90px; margin:0px auto; padding:0;"></a>
+                <h2 class="text-thin">Proud n Dedication</h2>
+                <p class="margin-bottom-30">The rich tradition of achieving success is something to behold, which is owed to the members, pillars of CSI.</p>
+                <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section 1 -->
+      
+      
+      <!-- Section 2 -->
+         
+      <!-- Section 3 -->
+      <section class="section background-white" >  
+        <div class="line">
+          <h2 class="text-size-50 text-center">Our Stats</h2>
+          <hr class="break-small background-primary break-center">
+          <div class="margin margin-top-bottom-50">
+            <div class="s-12 m-12 l-3">
+              <div class="block">
+                <div class="count-to">
+                  <span class="timer h1 text-size-50">1500</span>
+                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Eodem modo typi</p> 
+                </div>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-3">
+              <div class="block">
+                <div class="count-to">
+                  <span class="timer h1 text-size-50">95%</span>
+                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Duis autem</p> 
+                </div>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-3">
+              <div class="block">
+                <div class="count-to">
+                  <span class="timer h1 text-size-50">287</span>
+                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Mirum est notare</p> 
+                </div>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-3">
+              <div class="block">
+                <div class="count-to">
+                  <span class="timer h1 text-size-50">7 milion</span>
+                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Nam liber tempor</p> 
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>
+      
+      
+      <!-- Section 5 -->    
+      
+    </main>
+<footer>
+      
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      
+      <!-- Bottom Footer -->
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-6">
+          <a id="new" href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+   <a id="new" href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+   <a id="new" href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+           </div>
+        <div class="s-12 l-6">
+        <a class="right text-size-12" href="team.html" title="Responsee - lightweight responsive framework">Design and coding<br> by 
+CSI Team</a>  
+           </div>
+      </section>
+    </footer>
+    
+    	     <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                var current = 1;
+                
+                var iterate		= function(){
+                    var i = parseInt(current+1);
+                    var lis = $('#rotmenu').children('li').size();
+                    if(i>lis) i = 1;
+                    display($('#rotmenu li:nth-child('+i+')'));
+                }
+                display($('#rotmenu li:first'));
+                var slidetime = setInterval(iterate,5000);
+				
+                $('#rotmenu li').bind('click',function(e){
+                    clearTimeout(slidetime);
+                    display($(this));
+                    e.preventDefault();
+                });
+				
+                function display(elem){
+                    var $this 	= elem;
+                    var repeat 	= false;
+                    if(current == parseInt($this.index() + 1))
+                        repeat = true;
+					
+                    if(!repeat)
+                        $this.parent().find('li:nth-child('+current+') a').stop(true,true).animate({'marginRight':'-20px'},300,function(){
+                            $(this).animate({'opacity':'0.7'},700);
+                        });
+					
+                    current = parseInt($this.index() + 1);
+					
+                    var elem = $('a',$this);
+                    
+                        elem.stop(true,true).animate({'marginRight':'0px','opacity':'1.0'},300);
+					
+                    var info_elem = elem.next();
+                    $('#rot1 .heading').animate({'left':'-420px'}, 500,'easeOutCirc',function(){
+                        $('h1',$(this)).html(info_elem.find('.info_heading').html());
+                        $(this).animate({'left':'0px'},400,'easeInOutQuad');
+                    });
+					
+                    $('#rot1 .description').animate({'bottom':'-270px'},500,'easeOutCirc',function(){
+                        $('p',$(this)).html(info_elem.find('.info_description').html());
+                        $(this).animate({'bottom':'0px'},400,'easeInOutQuad');
+                    })
+                    $('#rot1').prepend(
+                    $('<img/>',{
+                        style	:	'opacity:0',
+                        className : 'bg'
+                    }).load(
+                    function(){
+                        $(this).animate({'opacity':'1'},600);
+                        $('#rot1 img:first').next().animate({'opacity':'0'},700,function(){
+                            $(this).remove();
+                        });
+                    }
+                ).attr('src','images/'+info_elem.find('.info_image').html()).attr('width','800').attr('height','300')
+                );
+                }
+            });
+        </script>
+        <script>
+			function sliderhide()
+			{
+				//document.getElementById('rotator').className='rotator';}
+				//div.content.style.visibility= 'hidden';
+				}
+			function showslider()
+			{
+				//div.content.style.visible=true;
+				document.getElementById('rotator').className='rotator';
+				document.getElementsByClassName('content').id='content';}
+				
+			function homeic(x)
+			{
+				
+				x.innerHTML='<img src="images/homeicon.jpg" style="height:70px; width:70px; margin:0px auto; padding:0;" />';}
+			function homeic1(x)
+			{
+				x.innerHTML='<img src="images/lapicon1.png" style="height:70px; width:70px; margin:0px auto; padding:0;" />';}
+			function homeic2(x)
+			{
+				x.innerHTML='<img src="images/memicon1.jpg" style="height:70px; width:70px; margin:0px auto; padding:0;" />';}
+				
+		</script>
+        
+    
+    
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+  </body>
+</html>

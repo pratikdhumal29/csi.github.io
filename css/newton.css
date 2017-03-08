@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:700);
+
+html,body{
+  height:100%;
+  font-family: 'Quicksand', sans-serif;
+  
+ /* background: red; /* For browsers that do not support gradients */
+  /*background: -webkit-radial-gradient(circle, #232526, #414345); /* Safari */
+  /*background: -o-radial-gradient(circle, #232526, #414345); /* Opera 11.6 to 12.0 */
+  /*background: -moz-radial-gradient(circle, #232526, #414345); /* Firefox 3.6 to 15 */
+  /*background: radial-gradient(circle, #232526, #414345); /* Standard syntax */
+  
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, #16222A,#3A6073); /* Safari */
+  background: -o-radial-gradient(circle, #16222A,#3A6073); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, #16222A,#3A6073); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, #16222A,#3A6073); /* Standard syntax */
+  
+  /*background: red; /* For browsers that do not support gradients */
+  /*background: -webkit-radial-gradient(circle, #093028,#237A57); /* Safari */
+  /*background: -o-radial-gradient(circle, #093028,#237A57); /* Opera 11.6 to 12.0 */
+  /*background: -moz-radial-gradient(circle, #093028,#237A57); /* Firefox 3.6 to 15 */
+  /*background: radial-gradient(circle, #093028,#237A57); /* Standard syntax */
+  
+}
+
+a, a:visited, a:hover{
+  text-decoration:none;
+  color:#db5989;
+}
+a:hover{
+  color:#a05772;
+}
+
+.container {
+  height: 150px;
+  left: 50%;
+  margin: -75px 0 0 -53px;
+  position: absolute;
+  top: 400px;
+  width: 106px;
+  text-align:center;
+}
+
+
+.cord{
+  padding-top:100px;
+  width:15px;
+  transform: rotate(0deg);
+  transform-origin:50% 50%;
+  float:left;
+}
+
+
+.ball{
+  background:#333;
+  width:15px;
+  height:15px;
+  float:left;
+  border-radius:50%;
+}
+
+
+.leftMove{
+  animation: leftBall .5s ease-in-out 0s infinite alternate;
+}
+.rightMove{
+  animation: rightBall .5s ease-in-out 0s infinite alternate;
+}
+
+
+
+@keyframes leftBall
+{
+0% {
+  transform: rotate(0deg) translateY(0px);
+  }
+/*this pauses the ball at the begining*/
+50% {
+  transform: rotate(0deg) translateY(0px);
+  }
+100% {
+  transform: rotate(50deg) translateY(-20px);
+  }
+
+}
+
+@keyframes rightBall
+{
+0% {
+  transform: rotate(-50deg) translateY(-20px);
+  }
+/*this pauses the ball at the begining*/
+50% {
+  transform: rotate(0deg) translateY(0px);
+  }
+100% {
+  transform: rotate(0deg) translateY(0px)
+      translateX(0px);
+  }
+
+}
+
+
+/*colors*/
+
+.cord .ball{
+  background:#2E8B57;
+}
